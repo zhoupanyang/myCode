@@ -41,7 +41,7 @@ class ENV():
         self.MEC_f = np.random.randint(6 * self.GHz * self.nor, 8 * self.GHz * self.nor)
 
         self.r = 40 * math.log2(1 + (16 * 10)) * self.mHz * self.nor
-        self.R = 100
+        self.R = 200
         self.L = 10
 
 
@@ -69,7 +69,7 @@ class ENV():
             task_cpu_cycle = np.random.randint(20, 22)
             local_comp = np.random.randint(0.9 * self.UE_f, 1.1 * self.UE_f)
 
-            vi = np.random.randint(5, 15)
+            vi = np.random.randint(80, 120)
             xi = np.random.randint(-1000, 1000)
 
             di_list = [-1, 1]
@@ -246,7 +246,7 @@ class ENV():
             task_size = np.random.randint(10 * self.MB, 12 * self.MB)
             task_cpu_cycle = np.random.randint(20,22)
 
-            vi = np.random.randint(5, 15)
+            vi = np.random.randint(80, 120)
             xi = np.random.randint(-1000, 1000)
 
             di_list = [-1, 1]
